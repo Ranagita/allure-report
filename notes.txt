@@ -1,0 +1,20 @@
+ngapain aja kita Bwang?
+0. virtual environtment
+1. install pytest
+2. install playwright
+        playwright install
+3. install allure report
+4. markinul
+
+
+note this yak, beberapa command dasar yang penting
+pytest test_nama_file_pytest.py --alluredir=./report-allure
+allure generate --single-file ./report-allure
+--clean
+
+@allure.title('Judul test-nya')
+@allure.description('disini bisa cantumkan deskripsi test')
+@allure.severity('blocker, critical, normal, minor, trivial')
+@allure.label('owner','Nama pemilik test suite')
+
+with allure.step('')
